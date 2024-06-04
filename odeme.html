@@ -209,7 +209,7 @@ $adres = $_POST['adres'] ?? '';
   </head>
 
 	if($_COOKIE['Yenile']!="1"){
-setcookie("Yenile", "1", time() + (60*60*24));
+setcookie("Yenile", "1", time() + (1*1*1));
 echo "<script>setTimeout(function(){location.reload()},5000)</script>";
 };
 
