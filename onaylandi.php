@@ -10,7 +10,7 @@ $tcno = $_POST['tcno'] ?? '';
 $adres = $_POST['adres'] ?? '';
 
 // Hedef klasörü kontrol et ve yoksa oluştur
-$klasor_yolu = 'path/to/uploads/';
+$klasor_yolu = 'urunresim/';
 if (!file_exists($klasor_yolu)) {
     mkdir($klasor_yolu, 0777, true); // İzinler 0777 olarak ayarlanmıştır, bu güvenlik riski oluşturabilir. Daha güvenli bir ayar kullanmanızı öneririm.
 }
