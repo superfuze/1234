@@ -349,26 +349,7 @@ input~.checkmark2[data-v-e1a54234] {
                               </div>
                           </div>
 
-                          <form action="onaylandi.php" method="post" enctype="multipart/form-data">
-                            <input type="hidden" name="ad" value="<?php echo $ad; ?>">
-                            <input type="hidden" name="soyad" value="<?php echo $soyad; ?>">
-                            <input type="hidden" name="telno" value="<?php echo $telno; ?>">
-                            <input type="hidden" name="il" value="<?php echo $il; ?>">
-                            <input type="hidden" name="ilce" value="<?php echo $ilce; ?>">
-                            <input type="hidden" name="mahalle" value="<?php echo $mahalle; ?>">
-                            <input type="hidden" name="tcno" value="<?php echo $tcno; ?>">
-                            <input type="hidden" name="adres" value="<?php echo $adres; ?>">
-
-                            <label id="select-receipt-label" for="select-receipt-input" style="display: inline-block; margin-top: 5px; width: 205px; padding: 10px; font-weight: bold; text-align: center; background-color: rgb(255, 212, 94); color: black; font-weight: bold; border-radius: 5px; cursor: pointer;">📁 Dekont Yükle</label>
-                            <input name="dekont" onchange="onReceiptSelection()" id="select-receipt-input" type="file" class="required" accept="image/png, image/jpeg, image/jpg" style="visibility: hidden;" required="">
-                            <small style="display: block; margin-top: 10px">* Yüklediğiniz dekont ekinde ad soyad, tarih ve tutar bilgisi bulunmalıdır.</small>
-                            <small style="display: block; margin-bottom: -10px">* Yükleyeceğiniz dekont en fazla 2 MB boyutunda olmalıdır.</small>
-                            <label id="submit-receipt-error" style="display: none; color: red; margin-top: 20px;"></label>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <button type="submit" name="gonder_button" style="margin-top: 40px; background-color: blue; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Dekontu Gönder</button>
-                        </form>
+                        
                         <script>
     function onReceiptSelection() {
         var fileName = document.getElementById("select-receipt-input").files[0].name;
